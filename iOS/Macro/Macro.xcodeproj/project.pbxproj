@@ -15,6 +15,7 @@
 		AA46C4CD2B02332F00856628 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AA46C4CC2B02332F00856628 /* .swiftlint.yml */; };
 		AA46C4D02B025BA400856628 /* MacroDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = AA46C4CF2B025BA400856628 /* MacroDesignSystem */; };
 		AA46C4D22B025CB500856628 /* 나눔손글씨 배은혜체.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA46C4D12B025CB500856628 /* 나눔손글씨 배은혜체.ttf */; };
+		AA46C4D82B0370A400856628 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA46C4D72B0370A400856628 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AA46C4CC2B02332F00856628 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		AA46C4CE2B025AA300856628 /* MacroDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MacroDesignSystem; path = ../MacroDesignSystem; sourceTree = "<group>"; };
 		AA46C4D12B025CB500856628 /* 나눔손글씨 배은혜체.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "나눔손글씨 배은혜체.ttf"; path = "../../../../../../Downloads/나눔손글씨 배은혜체.ttf"; sourceTree = "<group>"; };
+		AA46C4D72B0370A400856628 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AEE92490AF6F25C4DAF6AEF8 /* Pods-Macro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macro.release.xcconfig"; path = "Target Support Files/Pods-Macro/Pods-Macro.release.xcconfig"; sourceTree = "<group>"; };
 		B60928A2B9751095169A214C /* libPods-Macro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Macro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -85,9 +87,42 @@
 			path = Macro;
 			sourceTree = "<group>";
 		};
+		AA46C4D32B03706800856628 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AA46C4D42B03707500856628 /* View */,
+				AA46C4D62B03708200856628 /* Model */,
+				AA46C4D52B03707C00856628 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AA46C4D42B03707500856628 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA46C4D52B03707C00856628 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AA46C4D72B0370A400856628 /* LoginViewController.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AA46C4D62B03708200856628 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BAA07ADE2B0251CF00884F3C /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				AA46C4D32B03706800856628 /* Login */,
 				BAA07AE32B0253E600884F3C /* Home */,
 			);
 			path = Scene;
@@ -271,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA46C4D82B0370A400856628 /* LoginViewController.swift in Sources */,
 				AA46C4BC2B02304400856628 /* HomeViewController.swift in Sources */,
 				AA46C4B82B02304400856628 /* AppDelegate.swift in Sources */,
 				AA46C4BA2B02304400856628 /* SceneDelegate.swift in Sources */,
