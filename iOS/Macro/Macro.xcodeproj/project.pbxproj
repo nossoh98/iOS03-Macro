@@ -307,8 +307,8 @@
 			children = (
 				BA6C6E0F2B06ECEC00563B22 /* Network */,
 				BA6C6E172B06F3C500563B22 /* Entities */,
-				BA6C6E212B071D9E00563B22 /* InterfaceAdapters */,
 				BA6C6E142B06F31100563B22 /* UseCases */,
+				BA6C6E212B071D9E00563B22 /* InterfaceAdapters */,
 			);
 			path = Home;
 			sourceTree = "<group>";
