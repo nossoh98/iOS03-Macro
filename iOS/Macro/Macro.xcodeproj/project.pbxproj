@@ -14,6 +14,7 @@
 		AA46C4C12B02304600856628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA46C4C02B02304600856628 /* Assets.xcassets */; };
 		AA46C4CD2B02332F00856628 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AA46C4CC2B02332F00856628 /* .swiftlint.yml */; };
 		AA46C4D02B025BA400856628 /* MacroDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = AA46C4CF2B025BA400856628 /* MacroDesignSystem */; };
+		BA47FE152B07D38500B4CDED /* MacroNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = BA47FE142B07D38500B4CDED /* MacroNetwork */; };
 		BA6C6DF32B05FFC500563B22 /* CAGradientLayer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6C6DE22B05FFC400563B22 /* CAGradientLayer+.swift */; };
 		BA6C6DF42B05FFC500563B22 /* CircularViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6C6DE32B05FFC400563B22 /* CircularViewProtocol.swift */; };
 		BA6C6DF52B05FFC500563B22 /* UIScreen+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6C6DE42B05FFC400563B22 /* UIScreen+.swift */; };
@@ -36,7 +37,6 @@
 		D263CA242B04134600B4A144 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263CA232B04134600B4A144 /* ViewModelProtocol.swift */; };
 		D263CA262B04147E00B4A144 /* TravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263CA252B04147E00B4A144 /* TravelViewController.swift */; };
 		D263CA282B043C6B00B4A144 /* PinnedPlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263CA272B043C6B00B4A144 /* PinnedPlaceManager.swift */; };
-		D263CA2A2B05285C00B4A144 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = D263CA292B05285C00B4A144 /* Network */; };
 		D263CA2D2B052ECC00B4A144 /* TravelEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263CA2C2B052ECC00B4A144 /* TravelEndPoint.swift */; };
 		D263CA2F2B054A0E00B4A144 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263CA2E2B054A0E00B4A144 /* SearchResultViewController.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +51,7 @@
 		AA46C4C52B02304600856628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA46C4CC2B02332F00856628 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		AA46C4CE2B025AA300856628 /* MacroDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MacroDesignSystem; path = ../MacroDesignSystem; sourceTree = "<group>"; };
+		BA47FE132B07D37300B4CDED /* MacroNetwork */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MacroNetwork; path = ../MacroNetwork; sourceTree = "<group>"; };
 		BA6C6DE22B05FFC400563B22 /* CAGradientLayer+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+.swift"; sourceTree = "<group>"; };
 		BA6C6DE32B05FFC400563B22 /* CircularViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularViewProtocol.swift; sourceTree = "<group>"; };
 		BA6C6DE42B05FFC400563B22 /* UIScreen+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+.swift"; sourceTree = "<group>"; };
@@ -84,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D263CA2A2B05285C00B4A144 /* Network in Frameworks */,
+				BA47FE152B07D38500B4CDED /* MacroNetwork in Frameworks */,
 				AA46C4D02B025BA400856628 /* MacroDesignSystem in Frameworks */,
 				9BFF32D7723F20FDFD4D6D37 /* libPods-Macro.a in Frameworks */,
 			);
@@ -113,6 +114,7 @@
 		AA46C4AB2B02304400856628 = {
 			isa = PBXGroup;
 			children = (
+				BA47FE132B07D37300B4CDED /* MacroNetwork */,
 				AA46C4CE2B025AA300856628 /* MacroDesignSystem */,
 				AA46C4CC2B02332F00856628 /* .swiftlint.yml */,
 				AA46C4B62B02304400856628 /* Macro */,
@@ -347,7 +349,7 @@
 			name = Macro;
 			packageProductDependencies = (
 				AA46C4CF2B025BA400856628 /* MacroDesignSystem */,
-				D263CA292B05285C00B4A144 /* Network */,
+				BA47FE142B07D38500B4CDED /* MacroNetwork */,
 			);
 			productName = Macro;
 			productReference = AA46C4B42B02304400856628 /* Macro.app */;
@@ -714,9 +716,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = MacroDesignSystem;
 		};
-		D263CA292B05285C00B4A144 /* Network */ = {
+		BA47FE142B07D38500B4CDED /* MacroNetwork */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Network;
+			productName = MacroNetwork;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

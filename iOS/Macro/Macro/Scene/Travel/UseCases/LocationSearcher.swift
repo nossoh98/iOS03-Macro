@@ -7,7 +7,7 @@
 
 import Combine
 import Foundation
-import Network
+import MacroNetwork
 
 protocol LocationSearchUseCase {
   func searchLocation(query: String) -> AnyPublisher<[LocationDetail], NetworkError>
@@ -21,7 +21,7 @@ final class LocationSearcher: LocationSearchUseCase {
     self.provider = provider
   }
   
-  func searchLocation(query: String) -> AnyPublisher<[LocationDetail], Network.NetworkError> {
+  func searchLocation(query: String) -> AnyPublisher<[LocationDetail], MacroNetwork.NetworkError> {
     return provider.request(TravelEndPoint.search(query))
   }
       
